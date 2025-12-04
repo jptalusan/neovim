@@ -7,6 +7,12 @@ brew install neovim ripgrep fd
 cd ~/.config
 git clone git@github.com:jptalusan/neovim.git nvim
 ```
+in ~/.zshrc or bash_profile
+
+```bash
+alias vim="nvim"
+alias vi="nvim"
+```
 
 
 
