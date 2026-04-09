@@ -905,7 +905,7 @@ require("lazy").setup({
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
-		main = "nvim-treesitter.configs", -- Sets main module to use for opts
+		main = "nvim-treesitter", -- Sets main module to use for opts
 		-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 		opts = {
 			ensure_installed = {
@@ -951,6 +951,14 @@ require("lazy").setup({
 	},
 	{
 		"ThePrimeagen/vim-be-good",
+	},
+	-- if using lazy.nvim
+	{
+		"nvim-tree/nvim-tree.lua",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("nvim-tree").setup()
+		end,
 	},
 	-- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
 	-- init.lua. If you want these files, they are in the repository, so you can just download them and
