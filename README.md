@@ -14,5 +14,15 @@ alias vim="nvim"
 alias vi="nvim"
 ```
 
-
+## For Ubuntu
+```
+git clone git@github.com:jptalusan/neovim.git nvim
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+sudo apt install neovim
+nvim .
+# it should show you Lazy(?) and update all packages.
+# :q to exit
+:TSInstall lua
+```
 
